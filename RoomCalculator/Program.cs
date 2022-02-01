@@ -7,7 +7,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
         static void Main(string[] args)
         {
             // intro 
-            Console.WriteLine("Hello, this progam will help calculate the area and perimeter of various rectangular room.");
+            Console.WriteLine("Hello, this app will help calculate the area, perimeter, volume, and surface area of various rectangular room.");
             Console.WriteLine();
 
             // getting info 
@@ -26,7 +26,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Console.WriteLine("The perimeter of the room is " + perimeter + ".");
             double volume = area * height;
             Console.WriteLine("The volume of the room is " + volume + ".");
-            double surfaceArea = area * 5;
+            double surfaceArea = 2 * ((width * length) + (height * length) + (height * width));
             Console.WriteLine("The surface area of the room is " + surfaceArea + ".");
 
             if (area <= 250)
@@ -41,6 +41,9 @@ namespace MyApp // Note: actual namespace depends on the project name.
             {
                 Console.WriteLine("This is a large sized room.");
             }
+
+            Console.WriteLine();
+            Console.WriteLine("Thank you for using the room calculator app. Have a nice day.");
 
         }
     }
